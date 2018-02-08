@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+ @import url("bootstrap.min.css");
+ @import url("bootstrap-theme.css");
+
+ #brand {
+   color: white;
+ }
+
+.btn {
+  color: #FF8C00!important;
+  border-color: #FF8C00!important;
+  background-color: #FFFFFF!important;
+}
