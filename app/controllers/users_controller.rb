@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :login_require, except:[:new, create]
 
   def new
     @user = User.new
@@ -25,7 +26,7 @@ class UsersController < ApplicationController
 
   private
   def params_user
-    params.require(:user).permit(:name)
+    params.permit(:name, :email, :password_digest)
   end
 
 end
